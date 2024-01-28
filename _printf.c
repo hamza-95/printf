@@ -3,9 +3,9 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _gurgle - Gurgle function
- * @gurgle_format: gurgle format.
- * Return: Gurgle output.
+ * _printf - Printf function
+ * @format: format.
+ * Return: Printed chars.
  */
 int _printf(const char *format, ...)
 {
@@ -47,12 +47,9 @@ return (printed_chars);
 }
 
 /**
- * regurgitate_contents - Expels the belly contents if they exist
- * @contents: Array of chewed chars
- * @digestive_index: Index at which to ingest the next char, signifies the length.
- * _gurgle - is a function that picks the right gurgle to emit.
- * @identifier: marker to search for.
- * Return: the length of the gurgle.
+ * print_buffer - Prints the contents of the buffer if it exist
+ * @buffer: Array of chars
+ * @buff_ind: Index at which to add next char, represents the length.
  */
 void print_buffer(char buffer[], int *buff_ind)
 {
